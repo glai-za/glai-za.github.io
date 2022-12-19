@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="startScreen" class="start-screen">
+      <h1 class="rules">Tic Tac Toe Rules</h1>
+      <li>Play occurs on a 3 by 3 grid of 9 empty squares.</li>
+      <li>
+        Two players alternate marking empty squares,<br />
+        the first player marking Xs and the second player marking Os.s
+      </li>
+      <li>
+        If one player places three of the same marks in a row, that player wins.
+      </li>
+      <li>
+        If the spaces are all filled and there is no winner, the game ends in a
+        draw.
+      </li>
+      <button id="startGame">Start Game</button>
+    </div>
+    <div class="game-area">
+      <h2>Tic Tac Toe</h2>
+      <div id="board">
+        <div data-index="1" class="tile right-border bottom-border"></div>
+        <div data-index="2" class="tile right-border bottom-border"></div>
+        <div data-index="3" class="tile bottom-border"></div>
+        <div data-index="4" class="tile right-border bottom-border"></div>
+        <div data-index="5" class="tile right-border bottom-border"></div>
+        <div data-index="6" class="tile bottom-border"></div>
+        <div data-index="7" class="tile right-border"></div>
+        <div data-index="8" class="tile right-border"></div>
+        <div data-index="9" class="tile"></div>
+        <div id="strike" class="strike"></div>
+        <button id="exit">Exit Game</button>
+      </div>
+    </div>
+    <div id="game-over-box" class="hidden">
+      <h3 id="game-over-text">Winner is X</h3>
+      <button id="play-again">Play Again</button>
+    </div>
+  </body>
+</html>
